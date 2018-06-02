@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.springframework.boot.autoconfigure.SpringBootApplication"/>
+<fullyQualifiedTypeName name="com.imooc.miaosha.result.Result"/>
+<fullyQualifiedTypeName name="com.imooc.miaosha.result.CodeMsg"/>
+<fullyQualifiedTypeName name="org.springframework.ui.Model"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="org.springframework.messaging.handler.HandlerMethod"/>
+<fullyQualifiedTypeName name="com.imooc.miaosha.domain.MiaoshaUser"/>
+<fullyQualifiedTypeName name="com.imooc.miaosha.access.UserContext"/>
+</qualifiedTypeNameHistroy>

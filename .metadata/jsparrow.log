@@ -1,0 +1,8 @@
+2018-05-05 16:47:07 [Worker-15] INFO  eu.jsparrow.ui.a - Starting jSparrow
+2018-05-05 16:47:46 [main] INFO  eu.jsparrow.license.netlicensing.n - Validation scheduler started
+2018-05-05 16:48:04 [main] INFO  eu.jsparrow.ui.aP - Start refactoring from [aP] in project [miaosha]
+2018-05-05 16:48:05 [main] INFO  eu.jsparrow.ui.aP - End refactoring from [aP] in project [miaosha]
+2018-05-05 16:48:05 [main] INFO  eu.jsparrow.ui.aP - Rules with changes for project [miaosha] are: [Reformat Code]
+2018-05-05 17:44:34 [pool-8-thread-1] INFO  eu.jsparrow.license.netlicensing.n - Shutting down validation scheduler
+2018-05-20 20:36:30 [Worker-15] INFO  eu.jsparrow.ui.a - Starting jSparrow
+2018-05-20 20:52:13 [Framework stop] INFO  eu.jsparrow.ui.a - Stopping jSparrow
