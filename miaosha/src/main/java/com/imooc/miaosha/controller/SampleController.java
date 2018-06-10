@@ -12,7 +12,7 @@ import com.imooc.miaosha.redis.RedisService;
 import com.imooc.miaosha.redis.UserKey;
 import com.imooc.miaosha.result.CodeMsg;
 import com.imooc.miaosha.result.Result;
-import com.imooc.miaosha.rocketmq.MQSender;
+import com.imooc.miaosha.rabbitmq.MQSender;
 import com.imooc.miaosha.service.UserService;
 import com.imooc.miaosha.service.VideoService;
 
@@ -113,9 +113,30 @@ public class SampleController {
 	@RequestMapping("/mq")
 	@ResponseBody
 	public Result<String> mq() {
-		sender.send("hello, imooc");
+		sender.send("hello, rabbitmq!");
 		return Result.success("Hello，world");
 	}
+
+	@RequestMapping("/mq/topic")
+	@ResponseBody
+	public Result<String> mq_topic() {
+		sender.sendTopic("hello, rabbitmq! topic message");
+		return Result.success("Hello，world");
+	}
+
+    @RequestMapping("/mq/fanout")
+    @ResponseBody
+    public Result<String> mq_fanout() {
+        sender.sendFanout("hello, rabbitmq! fanout message");
+        return Result.success("hello, rabbitmq! fanout message");
+    }
+
+    @RequestMapping("/mq/header")
+    @ResponseBody
+    public Result<String> header() {
+		sender.sendHeader("hello, rabbitmq! header message");
+        return Result.success("Hello，world");
+    }
 
 	@RequestMapping("/video")
 	@ResponseBody

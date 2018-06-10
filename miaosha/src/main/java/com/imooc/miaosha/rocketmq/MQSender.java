@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import com.imooc.miaosha.redis.RedisService;
 import com.qianmi.ms.starter.rocketmq.core.RocketMQTemplate;
 
-@Service
+@Service(value="RocketMQSender")
 public class MQSender {
 
 	private static Logger log = LoggerFactory.getLogger(MQSender.class);

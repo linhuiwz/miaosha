@@ -15,7 +15,7 @@ import com.imooc.miaosha.vo.GoodsVo;
 import com.qianmi.ms.starter.rocketmq.annotation.RocketMQMessageListener;
 import com.qianmi.ms.starter.rocketmq.core.RocketMQListener;
 
-@Service
+@Service(value = "RocketMQReceiver")
 @RocketMQMessageListener(topic = "miaosha_queue", consumerGroup = "my-consumer_miaosha_queue")
 public class MQReceiver implements RocketMQListener<String>{
 
