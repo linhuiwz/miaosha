@@ -1,5 +1,6 @@
 package com.imooc.miaosha.controller;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
@@ -16,6 +17,7 @@ import com.imooc.miaosha.rabbitmq.MQSender;
 import com.imooc.miaosha.service.UserService;
 import com.imooc.miaosha.service.VideoService;
 
+@Slf4j
 @Controller
 @RequestMapping("/demo")
 public class SampleController {
@@ -82,7 +84,9 @@ public class SampleController {
 	@RequestMapping("/db/get")
 	@ResponseBody
 	public Result<User> dbGet() {
+		log.warn("start to get db test");
 		User user = userService.getById(1);
+		log.warn("end to get db test");
 		return Result.success(user);
 	}
 
